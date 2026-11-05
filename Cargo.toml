@@ -1,0 +1,13 @@
+[package]
+name = "lab5-shaders"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["window"]
+window = ["dep:minifb"]
+
+[dependencies]
+glam = "0.27.0"
+image = { version = "0.24.9", default-features = false, features = ["png"] }
+minifb = { version = "0.28.0", optional = true }
